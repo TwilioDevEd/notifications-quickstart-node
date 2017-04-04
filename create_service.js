@@ -16,11 +16,11 @@ if (env.TWILIO_APN_CREDENTIAL_SID != "") {
   console.log("No APN Credentials configured - add in config.js, if available.")
 }
 
-if (env.TWILIO_GCM_CREDENTIAL_SID != "") {
-  serviceData.gcmCredentialSid = env.TWILIO_GCM_CREDENTIAL_SID
-  console.log("Adding GCM Credentials to service")
+if (env.TWILIO_FCM_CREDENTIAL_SID != "") {
+  serviceData.fcmCredentialSid = env.TWILIO_FCM_CREDENTIAL_SID
+  console.log("Adding FCM Credentials to service")
 } else {
-  console.log("No GCM Credentials configured - add in config.js, if available.")
+  console.log("No FCM Credentials configured - add in config.js, if available.")
 }
 
 client.notify.v1.services.create(serviceData).then(function(response) {
