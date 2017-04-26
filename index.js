@@ -4,7 +4,6 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var env = require('./config.js');
 var twilio = require('twilio');
-var FB = require('fb');
 
 // Create Express Webapp
 var app = express();
@@ -135,4 +134,7 @@ var server = http.createServer(app);
 var port = process.env.PORT || 3000;
 server.listen(port, function() {
   console.log('Express server running on *:' + port);
+  if (process.env.NODE_ENV == 'test') {
+    process.exit();
+  }
 });
