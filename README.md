@@ -1,4 +1,5 @@
 # Notifications Quickstart for Node.js
+[![Build Status](https://travis-ci.org/TwilioDevEd/notifications-quickstart-node.svg?branch=master)](https://travis-ci.org/TwilioDevEd/notifications-quickstart-node)
 
 This application should give you a ready-made starting point for integrating notifications into your
 own apps with Twilio Notifications.
