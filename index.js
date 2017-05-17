@@ -115,8 +115,8 @@ app.post('/messenger_auth', function(request, response) {
   //Let's create a new facebook-messenger Binding for our user
   createBinding({
       "identity":identity,
-      "bindingType":'facebook-messenger',
-      "address":message.sender.id
+      "BindingType":'facebook-messenger',
+      "Address":message.sender.id
     },
     response);
 });
